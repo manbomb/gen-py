@@ -1,0 +1,12 @@
+<script type="text/javascript" src="simplecanvachart.js"></script>
+<script type="text/javascript" src="fit_log.js"></script>
+<div id="div_chart"></div>
+<script type="text/javascript">
+	data = fit;
+	color = ['blue'];
+
+	div = document.getElementById('div_chart');
+
+	SimpleCanvaChart('Gráfico de Fit',div,data,color,500,500,[false,true]);
+	//SimpleCanvaChart(Título,div,dados,cores,altura,largura,tipo);
+</script>

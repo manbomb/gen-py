@@ -1,0 +1,17 @@
+<script type="text/javascript" src="log.js"></script>
+<script type="text/javascript">
+	n = 0
+	function change() {
+		if (n == colors.length) {
+			clearInterval(interval);
+		}
+		document.body.style.backgroundColor = colors[n];
+		document.body.innerText = 'Geração: '+String(n);
+		n += 1;
+	}
+
+	interval = setInterval(function(){ change(); }, 50);
+</script>
+<style type="text/css">
+</style>
+<body></body>
